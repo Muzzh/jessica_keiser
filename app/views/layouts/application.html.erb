@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JessicaKeiser</title>
+    <title>Jessica Keiser</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,51 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="wrapper">
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav ">
+          <h1>JESSICA KEISER</h1>
+          <div id="portrait-container">
+            <% unless current_page?(home_art_path) %>
+              <%= image_tag 'SelfPortrait.JPG' %>
+            <% else current_page?(home_research_path) %>
+              <%= image_tag 'prof.jpg' %>
+            <% end %>
+          </div>
+        </ul>
+      </div>
+      <div id="page-content-wrapper">
+        <div class="page-content">
+          <div id="page-container">
+            
+            <div class=" col-12">
+              <nav class="navbar navbar-inverse">
+                <div class="row">
+                  <div class="col-2">
+                    <%= link_to 'Home', root_path, class: 'nav-item nav-link' %>
+                  </div>
+                  <div class="col-2">
+                    <%= link_to 'Reseach', home_research_path, class: 'nav-item nav-link' %>
+                  </div>
+                  <div class="col-2">
+                    <%= link_to 'Teaching', home_teaching_path, class: 'nav-item nav-link' %>
+                  </div>
+                  <div class="col-2">
+                    <%= link_to 'CV', home_cv_path, class: 'nav-item nav-link' %>
+                  </div>
+                  <div class="col-2">
+                    <%= link_to 'Art', home_art_path, class: 'nav-item nav-link' %>
+                  </div>
+                </div>
+              </nav>
+
+              <div>
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
