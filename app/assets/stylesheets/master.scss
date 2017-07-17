@@ -4,11 +4,20 @@ h1 {
   text-align: center;
 }
 
-.navbar {
+.jk-navbar {
   background: #90C3D4;
   text-align: center;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
-
+.jk-navbar a {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.link-box {
+  display: inline;
+}
 #page-container {
   margin-left: 0;
   margin-right: 0;
@@ -56,6 +65,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .jk-navbar a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
 
   #wrapper {
     padding-left: 0;
