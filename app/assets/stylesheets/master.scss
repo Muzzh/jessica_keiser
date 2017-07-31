@@ -64,7 +64,13 @@ h1 {
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .jk-navbar a {
+    margin-left: 10px;
+    margin-right: 10px;    
+  }
+}
+@media (max-width: 767px) {
   .jk-navbar a {
     margin-left: 0.5em;
     margin-right: 0.5em;
