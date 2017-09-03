@@ -1,11 +1,55 @@
+<% content_for :head do %>
+  <meta name="turbolinks-cache-control" content="no-cache">
+<% end %>
+
 <div class="row">
-  <div class="col-5 hidden-md-up">
+  <div class="col-12 hidden-md-up">
    <div class="small-pic-container">
       <%= image_tag 'SelfPortrait.JPG' %>
     </div>
   </div>
-  <div class="col-6 col-md-12">
-    <h1>art</h1>
-    <p>I am a PhD candidate in the Department of Philosophy at Yale University. My primary area of research is the philosophy of language, though I also have interests in metaphysics, logic, the philosophy of art, and feminist philosophy. My dissertation, supervised by Zoltán Szabó, is about linguistic convention.</p>
+  <div class="col-12 align-center">
+    <h1>Art</h1>
+  </div>
+  <div class="col-12 scroller-for">
+    <div>
+      <%= image_tag "1.jpg", class: "featured" %>
+    </div>
+    <div>
+      <%= image_tag "2.jpg", class: "featured" %>
+    </div>
+    <div>
+      <%= image_tag "3.jpg", class: "featured" %>
+    </div>
+    <div>
+      <%= image_tag "4.jpg", class: "featured" %>
+    </div>
+    <div>
+      <%= image_tag "5.jpg", class: "featured" %>
+    </div>
+    <div>
+      <%= image_tag "6.jpg", class: "featured" %>
+    </div>
+  </div>
+</div>
+  <div class="col-4 offset-1 col-sm-10 scroller-nav">
+    <div>
+      <%= image_tag "1.jpg", class: "art" %>
+    </div>
+    <div>
+      <%= image_tag "2.jpg", class: "art"  %>
+    </div>
+    <div>
+      <%= image_tag "3.jpg", class: "art" %>
+    </div>
+    <div>
+      <%= image_tag "4.jpg", class: "art" %>
+    </div>
+    <div>
+      <%= image_tag "5.jpg", class: "art" %>
+    </div>
+    <div>
+      <%= image_tag "6.jpg", class: "art" %>
+    </div>
   </div>
 </div>

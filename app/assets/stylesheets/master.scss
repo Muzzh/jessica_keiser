@@ -1,9 +1,21 @@
 @import "bootstrap";
+@import 'slick';
+@import 'slick-theme';
+
 
 h1 {
   text-align: center;
 }
+body {
+  background-image: image_url('bg.jpg');
+}
 
+.current_content {
+  padding: 10px 10px 10px 20px;
+  background-color: white;
+}
+.text-content {
+}
 .jk-navbar {
   background: #90C3D4;
   text-align: center;
@@ -51,6 +63,8 @@ h1 {
   width: 100%;
 }
 .sidebar-nav {
+  height: 100%;
+  background-color: white;
   position: absolute;
   top: 0;
   width: 400px;
@@ -62,6 +76,24 @@ h1 {
 .small-pic-container img {
   width: 100%;
   height: auto;
+}
+.scroller-for {
+
+}
+.scroller-nav {
+  margin-left: 10px;
+}
+.featured {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.art {
+  height: 100px;
+  margin: 0 10px;
+}
+.slick-prev:before, .slick-next:before { 
+    color:red !important;
 }
 
 @media (max-width: 800px) {

@@ -6,6 +6,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <% if content_for?(:head) %>
+      <%= yield(:head) %>
+    <% end %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -28,13 +32,13 @@
           <div id="page-container">
               <nav class="jk-navbar navbar-inverse">
                     <%= link_to 'Home', root_path %>
-                    <%= link_to 'Reseach', home_research_path %>
+                    <%= link_to 'Research', home_research_path %>
                     <%= link_to 'Teaching', home_teaching_path %>
                     <%= link_to 'CV', home_cv_path %>
                     <%= link_to 'Art', home_art_path %>
               </nav>
 
-              <div>
+              <div class="current_content">
                 <%= yield %>
               </div>
           </div>
