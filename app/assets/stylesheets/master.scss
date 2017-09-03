@@ -1,34 +1,69 @@
 @import "bootstrap";
 @import 'slick';
 @import 'slick-theme';
-
+@import url('https://fonts.googleapis.com/css?family=Alegreya|EB+Garamond|Gentium+Book+Basic|Lateef|Philosopher|Sorts+Mill+Goudy');
+/*font-family: 'Alegreya', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Sorts Mill Goudy', serif;
+font-family: 'Lateef', cursive;*/
 
 h1 {
   text-align: center;
 }
+h1 span {
+  font-size: 120%;
+}
 body {
   background-image: image_url('bg.jpg');
 }
-
+h3 span {
+  font-size: 135%;
+}
 .current_content {
   padding: 10px 10px 10px 20px;
   background-color: white;
+  font-size: 130%;
+  font-family: 'Sorts Mill Goudy', serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
 .text-content {
+  padding: 5% 5% 5% 5%;
+  text-align: justify;
+}
+.teaching-page {
+  text-align: left;
+}
+.teaching-page h3 {
+  font-size: 90%;
+  margin-bottom: 20px;
 }
 .jk-navbar {
-  background: #90C3D4;
+  font-family: 'Sorts Mill Goudy', serif;
+  background: #6F98A3;
   text-align: center;
   width: 100%;
   padding-bottom: 1em;
   padding-top: 1em;
 }
 .jk-navbar a {
+  color: white;
   margin-right: 1em;
   margin-left: 1em;
 }
 .link-box {
   display: inline;
+}
+#name-brand {
+  font-family: 'Sorts Mill Goudy', serif;
+  padding-top: 7%;
+  height: 56px;
+}
+#name-brand h1::first-letter {
+  font-size: 110%;
 }
 #page-container {
   margin-left: 0;
@@ -55,6 +90,7 @@ body {
   height: auto;
 }
 #portrait-container {
+  padding-top: 14%;
   padding-left: 10%;
   padding-right: 10%;
 }
