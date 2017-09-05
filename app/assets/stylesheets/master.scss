@@ -43,16 +43,23 @@ h3 span {
 }
 .jk-navbar {
   font-family: 'Sorts Mill Goudy', serif;
+  font-size: 18px;
   background: #6F98A3;
   text-align: center;
   width: 100%;
   padding-bottom: 1em;
   padding-top: 1em;
 }
+.jk-navbar::first-letter {
+  font-size: 25px;
+}
 .jk-navbar a {
   color: white;
-  margin-right: 1em;
-  margin-left: 1em;
+  margin-right: 2.5em;
+  margin-left: 2.5em;
+}
+a .navlink::first-letter {
+  font-size: 25px;
 }
 .link-box {
   display: inline;
@@ -108,13 +115,11 @@ h3 span {
   margin: 0;
   padding: 0;
 }
-
 .small-pic-container img {
   width: 100%;
   height: auto;
 }
 .scroller-for {
-
 }
 .scroller-nav {
   margin-left: 10px;
@@ -130,6 +135,13 @@ h3 span {
 }
 .slick-prev:before, .slick-next:before { 
     color:red !important;
+}
+div.modal-body {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+div.modal-header {
+  display: inline;
 }
 
 @media (max-width: 800px) {
