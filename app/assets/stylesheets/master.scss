@@ -9,6 +9,9 @@ font-family: 'Gentium Book Basic', serif;
 font-family: 'Sorts Mill Goudy', serif;
 font-family: 'Lateef', cursive;*/
 
+hr {
+  margin: 5px !important;
+}
 h1 {
   text-align: center;
 }
@@ -78,8 +81,14 @@ h3 span {
   padding-left: 400px;
   transition: all 0.4s ease 0s;
 }
-
+#index-small {
+  font-size: 17px;
+}
+#index-small h1 {
+  font-size: 22px;
+}
 #sidebar-wrapper {
+  position: fixed;
   margin-left: -400px;
   left: 400px;
   width: 400px;
@@ -114,8 +123,8 @@ h3 span {
   padding: 0;
 }
 .small-pic-container img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-height: 250px;
 }
 .scroller-for {
 }
@@ -148,10 +157,13 @@ div.modal-header {
     margin-right: 10px;    
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
+  .jk-navbar {
+    font-size: 14px;
+  }
   .jk-navbar a {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   #wrapper {
