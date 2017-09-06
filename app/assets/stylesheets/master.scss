@@ -50,15 +50,13 @@ h3 span {
   padding-bottom: 1em;
   padding-top: 1em;
 }
-.jk-navbar::first-letter {
-  font-size: 25px;
-}
+
 .jk-navbar a {
   color: white;
   margin-right: 2.5em;
   margin-left: 2.5em;
 }
-a .navlink::first-letter {
+.navlink span {
   font-size: 25px;
 }
 .link-box {

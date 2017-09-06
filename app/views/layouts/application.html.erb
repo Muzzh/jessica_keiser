@@ -22,11 +22,13 @@
           </div>
             
           <div id="portrait-container">
-            <% unless current_page?(home_art_path) %>
-              <%= image_tag 'SelfPortrait.JPG' %>
-            <% else current_page?(home_research_path) %>
-              <%= image_tag 'prof.jpg' %>
-            <% end %>
+            <%= image_tag 'SelfPortrait.JPG' %>
+            <p>Self-portrait, charcoal on paper</p>
+
+            <p>Department of Philosophy,
+            Yale University, P.O. Box 208306, New Haven, CT 06520</p>
+
+            <p>jessica.keiser@yale.edu</p>
           </div>
         </ul>
       </div>
@@ -34,11 +36,21 @@
         <div class="page-content">
           <div id="page-container">
               <nav class="jk-navbar navbar-inverse">
-                <%= link_to 'HOME', root_path, class: 'navlink' %>
-                <%= link_to 'RESEARCH', home_research_path, class: 'navlink' %>
-                <%= link_to 'TEACHING', home_teaching_path, class: 'navlink' %>
-                <%= link_to 'CV', home_cv_path, class: 'navlink' %>
-                <%= link_to 'ARTWORK', home_art_path, class: 'navlink' %>
+                <%= link_to root_path, :class => 'navlink' do %>
+                  <span>H</span>OME
+                <% end %>
+                <%= link_to home_research_path, :class => 'navlink' do %>
+                  <span>R</span>ESEARCH
+                <% end %>
+                <%= link_to home_teaching_path, :class => 'navlink' do %>
+                  <span>T</span>EACHING
+                <% end %>
+                <%= link_to home_cv_path, :class => 'navlink' do %>
+                  <span>C. V.</span>
+                <% end %>
+                <%= link_to home_art_path, :class => 'navlink' do %>
+                  <span>A</span>RTWORK
+                <% end %>
               </nav>
 
               <div class="current_content">
