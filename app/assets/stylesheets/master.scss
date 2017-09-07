@@ -151,6 +151,38 @@ div.modal-header {
   display: inline;
 }
 
+@media (max-width: 400px){
+  .teaching {
+    font-size: 14px;
+  }
+  .teaching .col-4 {
+    padding-left: 0;
+  }
+  div.current_content {
+    padding: 0;
+  }
+  .text-content p {
+    font-size: 14px;
+  }
+  .text-content h5 {
+    font-size: 15px;
+  }
+  #index-small h1 {
+    font-size: 17px;
+  }
+  #index-small p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .scroller-for img {
+    width: 200px;
+    height: auto;
+  }
+  .scroller-nav img {
+    width: 40px;
+    height: auto;
+  }
+}
 @media (max-width: 800px) {
   .jk-navbar a {
     margin-left: 10px;
