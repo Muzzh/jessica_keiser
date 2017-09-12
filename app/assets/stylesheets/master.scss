@@ -104,6 +104,7 @@ h3 span {
   height: auto;
 }
 #portrait-container {
+  font-family: 'Sorts Mill Goudy', serif;
   padding-top: 14%;
   padding-left: 10%;
   padding-right: 10%;
@@ -149,6 +150,9 @@ div.modal-body {
 }
 div.modal-header {
   display: inline;
+}
+#cv-images img {
+  max-width: 100%;
 }
 
 @media (max-width: 400px){
