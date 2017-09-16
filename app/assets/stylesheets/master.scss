@@ -130,7 +130,8 @@ h3 span {
 .scroller-for {
 }
 .scroller-nav {
-  margin-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .featured {
   height: 400px;
@@ -181,6 +182,9 @@ div.modal-header {
   .scroller-for img {
     width: 200px;
     height: auto;
+  }
+  .scroller-nav {
+    max-width: 70%;
   }
   .scroller-nav img {
     width: 40px;
